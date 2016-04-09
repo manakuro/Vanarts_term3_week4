@@ -1,0 +1,108 @@
+/*---------------------------
+    Color Theme
+---------------------------*/
+// Primary Color
+$white: #fff;
+$black: #2F2F2F;
+$form-grey: #EEE9E9;
+$light-grey: #f4f3f3;
+$error:  #E45D5D;
+$success: #dff0d8;
+// $light-blue: #00bff3;
+
+// Secondary color
+$secondary: #00bff3;
+
+$support: #f7941d;
+
+// Background Colour
+$body: #fff;
+
+
+/*---------------------------
+    Fonts
+---------------------------*/
+$font-main: 'Roboto', 'Lato';
+
+
+/*---------------------------
+    Grid System
+---------------------------*/
+$grid-padding: 1.5em;
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.row {
+    position: relative;
+    margin: 0 auto;
+}
+
+.row .row {
+    width: auto;
+    margin: 0 -$grid-padding;
+}
+
+.columns,
+.column {
+    position: relative;
+    float: left;
+    padding: 0 $grid-padding; /* 15px --> 30px gutter between columns */
+}
+
+.row-center {
+    text-align: center;
+}
+
+.row-center > .columns {
+    display: inline-block;
+    letter-spacing: 0;
+    vertical-align: top;
+    float: none;
+}
+
+.row-center.va-middle > .columns {
+    vertical-align: middle;
+}
+
+.row-center.va-bottom > .columns {
+    vertical-align: bottom;
+}
+
+.row-center.va-middle > .columns {
+    vertical-align: middle;
+}
+
+.row-center.va-bottom > .columns {
+    vertical-align: bottom;
+}
+
+@for $i from 1 through 12 {
+    
+    .span-#{$i} {
+        width: (100% / 12) * $i
+    }
+    .push-#{$i} {
+        left: (100% / 12) * $i
+    }
+    .pull-#{$i} {
+        right: (100% / 12) * $i
+    }
+
+    .offset-#{$i} {
+        margin-left: (100% / 12) * $i
+    }
+}
+
+/*---------------------------
+    Border
+---------------------------*/
+$border-bottom: inset 0 -1px rgba(0,0,0,.5);
+$border-bottom-white: inset 0 -1px rgba(255,255,255,.5);
+$border-left: inset 1px 0 rgba(0,0,0,.5);

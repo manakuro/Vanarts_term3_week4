@@ -1,0 +1,490 @@
+/* --------------------------
+        BASE
+----------------------------*/
+@import 'partials/_config.scss';
+@import 'partials/_base.scss';
+
+
+/* --------------------------
+        LAYOUT
+----------------------------*/
+
+/* Header */
+.page-header {
+
+    height: 100px;
+
+    // Logo 
+    .logo {
+        margin-top: 10px;
+    }
+
+    // Navigation
+    .nav {
+
+        margin-top: 20px;
+        text-align: right;
+
+        li {
+            display: inline-block;
+            padding: 10px;
+
+            a {
+                display: block;
+                padding: 10px;
+                font-size: 2em;
+                text-transform: uppercase;
+                color: $black;
+
+                -webkit-transition: background .5s, color .1s;
+                   -moz-transition: background .5s, color .1s;
+                    -ms-transition: background .5s, color .1s;
+                     -o-transition: background .5s, color .1s;
+                        transition: background .5s, color .1s;
+
+            }
+
+            a:hover {
+                background: $secondary;
+                color: $white;
+            }
+        }
+
+    }
+
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../img/hero/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    .hero-inner {
+        position: absolute;
+        top: 10%;
+        left: 65%;
+    }
+
+    .hero-title {
+        font-size: 6em;
+        margin-top: 3em;
+        text-transform: uppercase;
+    }
+
+    .hero-caption {
+        font-size: 2em;
+    }
+}
+
+/* Section Introduction */
+.sec-intro {
+
+    background: $light-grey;
+
+    // Heading
+    .sec-intro-heading {
+        font-size: 8em;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+
+    // Divider
+    .sec-intro-divider {
+        width: 100%;
+        margin: 30px 0;
+        height: 1px;
+        box-shadow: $border-bottom;
+    }
+
+    // Description
+    .sec-intro-desc {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+
+    // Products
+    .sec-intro-product-li {
+        margin-top: 3em;
+        text-align: center;
+
+        &.first-row {
+            margin-top: 0;
+        }
+
+        // Icon image
+        .sec-intro-product-li-img-wrapper {
+            min-height: 14em;
+
+            img {
+                width: 45%;
+            }
+        }
+
+        .sec-intro-product-caption {
+            margin-top: 1em;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+
+    .sec-intro-cta {
+        margin-top: 2em;
+        display: block;
+    }
+
+    // Instructors
+    .sec-intro-intructors {
+        margin-top: 5em;
+        padding: 0 $grid-padding;
+
+        .sec-intro-intructors-li {
+            padding: 0;
+        }
+    }
+}
+
+/* Section Testimonials */
+.sec-testimonial {
+    min-height: 100vh;
+    background-image: url('../img/home/testimonial/testimonial.jpg');
+    background-repeat: none;
+    background-size: cover;
+
+    color: $white;
+
+    .sec-testimonial-inner-title {
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    .sec-testimonial-inner-course {
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    .sec-testimonial-inner-comment {
+        margin-top: 2em;
+        font-size: 2em;
+    }
+
+    .sec-testimonial-cta {
+        margin-top: 3em;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Section Call to Action */
+.sec-cta {
+
+    .sec-cat-inner {
+        padding: 3em 0;
+        background: $support;
+        min-height: 13em;
+        color: $white;
+
+        .sec-cat-caption {
+            font-size: 4em;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+/* Footer */
+.page-footer {
+    min-height: 300px;
+    background: $light-grey;
+    color: $black;
+
+    .page-footer-title {
+        font-size: 2em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    // // Featured products
+    // .featured_products {
+    //     li a {
+    //         font-size: 2em;
+    //         color: $black;
+    //     }
+    // }
+
+    .social {
+        margin-top: 4em;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            a {
+                color: $black;
+                font-size: 0;
+
+                .fa {
+                    font-size: 30px;
+                }
+
+            -webkit-transition: all .5s;
+               -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                 -o-transition: all .5s;
+                    transition: all .5s;
+            }
+
+            a:hover {
+                color: $secondary;
+            }
+        }
+    }
+
+    .page-footer-nav {
+        li {
+            margin-bottom: 10px;
+            a {
+                color: $black;
+                font-size: 1.5em;
+                text-transform: uppercase;
+
+            -webkit-transition: all .5s;
+               -moz-transition: all .5s;
+                -ms-transition: all .5s;
+                 -o-transition: all .5s;
+                    transition: all .5s;
+
+            }
+
+            a:hover {
+                color: $secondary;
+            }
+        }
+
+    }
+
+    .copyright {
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .input-wrapper {
+        margin-top: 20px;
+        position: relative;
+        padding: 0;
+    }
+
+}
+
+// /* Tours */
+// @import 'tours.scss';
+
+// /* Gallery */
+// @import 'gallery.scss';
+
+// /* Testimonials */
+// @import 'testimonials.scss';
+
+// /* Sign Up / Log In */
+@import 'signup.scss';
+
+// /* Resource */
+@import 'resources.scss';
+
+// /* Contact */
+// @import 'contact.scss';
+
+// /* Media Query */
+@import 'partials/_mediaquery.scss';
+
+/* --------------------------
+        MODULES
+----------------------------*/
+
+/*---- Section Heading ----*/
+.section {
+    padding: 60px 0 60px 0;
+}
+
+.section-title {
+    margin: 20px 0;
+    font-size: 5em;
+    font-family: 'Dancing Script';
+    font-weight: 300;
+    color: $secondary;
+}
+
+/*---- Form ----*/
+.form-lists {
+    text-align: left;
+
+    .form-lists-inline {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .input-wrapper-btn {
+        text-align: center;
+    }
+}
+
+.input-wrapper {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+// text
+.input {
+    width: 100%;
+    height: 30px;
+    border: 2px solid $form-grey;
+    font-size: 2em;
+    font-weight: 300;
+
+    -webkit-transition: border-color 0.25s;
+       -moz-transition: border-color 0.25s;
+        -ms-transition: border-color 0.25s;
+         -o-transition: border-color 0.25s;
+            transition: border-color 0.25s;
+}
+
+.input:hover {
+    border-color: $secondary;
+}
+
+/* Btn */
+.btn {
+    display: block;
+    width: 150px;
+    min-height: 60px;
+    background: $secondary;
+    padding: 20px;
+    font-size: 1.5em;
+    color: $white;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* label */
+.label-span {
+    font-size: 2em;
+    font-weight: 300;
+    display: block;
+    margin: 5px;
+    text-align: left;
+}
+
+.input-label {
+    margin: 20px 0;
+}
+
+.input-wrapper.checkbox .input-label{
+    margin-right: 10px;
+}
+
+/* textarea */
+.textarea {
+    height: 150px;
+}
+
+.error-msg {
+    margin: 60px auto;
+    font-size: 2em;
+    color: $error;
+    font-weight: 900;
+}
+
+.success-msg {
+    margin: 60px auto;
+    font-size: 2em;
+    color: $success;
+    font-weight: 900;
+}
+
+/*---- Layout ----*/
+.no-pd {
+    padding: 0;
+}
+
+/* hide for mobile */
+@media only screen and (max-width: 25em) {
+    .mobile-hide {
+        display: none;
+    }
+}
+
+/* hide for tablet */
+@media only screen and (min-width: 25em) and (max-width: 53.750em) {
+    .medium-hide {
+        display: none;
+    }
+}
+
+/* hide for desktop */
+@media only screen and (min-width: 53.750em) {
+    .large-hide {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* --------------------------
+        STATES
+----------------------------*/
+
+
+
+
+
+
+
+
+
+/* --------------------------
+        Print
+----------------------------*/
+@import 'partials/_print.scss';

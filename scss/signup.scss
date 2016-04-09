@@ -1,0 +1,27 @@
+.sec-signup {
+
+    .form-wrapper {
+        margin: 2em;
+        padding: 2em;
+        border: 1px solid $form-grey;
+    }
+    
+    // Heading
+    .form-heading {
+        font-size: 3em;
+        color: $secondary;
+        text-align: left;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .sec-signup-already {
+
+        font-size: 2em;
+
+        a {
+            color: $secondary;
+        }
+    }
+    
+}
